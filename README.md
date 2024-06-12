@@ -1,4 +1,4 @@
-# Message System
+# Organisation Stakes
 This fullstack code is made for an organization register and to create a vesting schedule for their tokens. Depending on the tokenomics model of a web3 organization
 ## Description
 ### Smart contract part
