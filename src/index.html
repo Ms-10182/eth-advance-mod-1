@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stake Organisation Frontend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Stake Organisation</h1>
+
+    <div id="connect-wallet" class="section">
+        <button onclick="connectWallet()">Connect Wallet</button>
+        <p id="wallet-status">Wallet Status: Disconnected</p>
+    </div>
+
+    <div id="set-vesting-schedule" class="section">
+        <h2>Set Vesting Schedule</h2>
+        <div class="input-group">
+            <label for="community-vesting">Community Vesting Period:</label>
+            <input type="number" id="community-vesting" placeholder="Community Vesting Period">
+        </div>
+        <div class="input-group">
+            <label for="investors-vesting">Investors Vesting Period:</label>
+            <input type="number" id="investors-vesting" placeholder="Investors Vesting Period">
+        </div>
+        <div class="input-group">
+            <label for="pre-sale-buyers-vesting">Pre-Sale Buyers Vesting Period:</label>
+            <input type="number" id="pre-sale-buyers-vesting" placeholder="Pre-Sale Buyers Vesting Period">
+        </div>
+        <div class="input-group">
+            <label for="founders-vesting">Founders Vesting Period:</label>
+            <input type="number" id="founders-vesting" placeholder="Founders Vesting Period">
+        </div>
+        <button onclick="setVestingSchedule()">Set Vesting Schedule</button>
+    </div>
+
+    <div id="add-member">
+        <h2>Add Member</h2>
+        <input type="text" id="member-address" placeholder="Member Address">
+        <select id="member-type">
+            <option value="0">Community</option>
+            <option value="1">Investors</option>
+            <option value="2">Pre-Sale Buyers</option>
+            <option value="3">Founders</option>
+        </select>
+        <input type="number" id="member-amount" placeholder="Amount">
+        <button onclick="addMember()">Add Member</button>
+    </div>
+
+    <div id="whitelist-member">
+        <h2>Whitelist Member</h2>
+        <input type="text" id="whitelist-address" placeholder="Member Address">
+        <button onclick="whitelistMember()">Whitelist Member</button>
+    </div>
+
+    <div id="claim-token">
+        <h2>Claim Tokens</h2>
+        <input type="text" id="claim-tokens" placeholder="Claim Tokens">
+        <button onclick="claimTokens()">Claim Tokens</button>
+
+        <input type="text" id="check-tokens" placeholder="check tokens">
+        <button onclick="checkTokens()">Check tokens</button>
+    </div>
+
+    <div>
+        <h2>Check time</h2> 
+        <button id ="get-time" onclick="getBlockStamp()">Click to check time</button>
+    </div>
+
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="app.js"></script>
+</body>
+</html>
