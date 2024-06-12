@@ -13,8 +13,8 @@ This contract is written in Solidity language, a programming language used for d
 To run this program:
 1) create new directory and run 
 ```javascript
-git clone 
-cd directory
+git clone https://github.com/Ms-10182/eth-advance-mod-1.git
+cd eth-advance-mod-1
 ```
 2) In remix IDE create new .sol file copy and paste the code of ```StakeOrganisation.sol``` into it. select injected metamask and any testnet.
 3) Pass the organisation name and token name as arguments and deploy the contract from left side panel of remix IDE.
